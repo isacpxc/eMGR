@@ -6,7 +6,7 @@ const app = express();
 const port = 8080;
 app.use(express.json())
 
-app.use(newedital);
+app.use('/new', newedital);
 
 app.listen(port, () => {
     console.log(`Servindo em http://localhost:${port}`);
